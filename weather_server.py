@@ -6,7 +6,7 @@ from typing import Optional
 from hashlib import sha256
 from pydantic import BaseModel
 
-app = FastAPI()
+app = FastAPI(debug=False, docs_url=None, redoc_url=None)
 
 class Auth(BaseModel):
      auth : str
